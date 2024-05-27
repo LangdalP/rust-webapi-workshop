@@ -1,0 +1,15 @@
+{
+  "name": "verify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "verify": "node index.js",
+    "test": "API_URL=http://www.vg.no jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
