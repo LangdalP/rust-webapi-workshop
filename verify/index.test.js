@@ -38,8 +38,6 @@ test("03: Kall til /nikolas med query parameter flink=verdi gir tekstsvar 'Nikol
  *
  */
 test("04: POST med JSON til /navn skal sette saman fornavn, mellomnavn og etternavn", async () => {
-  const apiUrl = process.env.API_URL;
-
   const route = `${apiUrl}/navn`;
   const response = await fetch(route, {
     method: "POST",
@@ -48,7 +46,7 @@ test("04: POST med JSON til /navn skal sette saman fornavn, mellomnavn og ettern
     },
     body: JSON.stringify({
       fornavn: "Peder",
-      mellomavn: "Voldnes",
+      mellomnavn: "Voldnes",
       etternavn: "Langdal",
     })
   })
@@ -62,7 +60,7 @@ test("04: POST med JSON til /navn skal sette saman fornavn, mellomnavn og ettern
     },
     body: JSON.stringify({
       fornavn: "Erik",
-      mellomavn: "Aadal",
+      mellomnavn: "Aadal",
       etternavn: "Gustafsson",
     })
   })
