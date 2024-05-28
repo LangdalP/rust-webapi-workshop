@@ -2,10 +2,9 @@
   "name": "verify",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.test.js",
   "scripts": {
-    "verify": "node index.js",
-    "test": "API_URL=http://www.vg.no jest"
+    "test": "API_URL=<SETT INN> jest"
   },
   "author": "",
   "license": "ISC",
